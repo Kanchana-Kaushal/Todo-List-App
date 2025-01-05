@@ -1,3 +1,4 @@
+/*Color profiles*/
 :root {
     --primary-color: #f4eeff;
     --secondary-color: #dcd6f7;
@@ -96,7 +97,6 @@ hr {
     border-radius: 50px;
     display: flex;
     align-items: center;
-    /*border: 1px solid var(--accent-color);*/
     background-color: var(--secondary-color);
 }
 
@@ -159,6 +159,8 @@ hr {
 .tasks input {
     display: none;
 }
+
+/*Mobile View*/
 
 @media (max-width: 500px) {
     html {
