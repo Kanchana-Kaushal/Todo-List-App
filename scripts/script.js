@@ -1,4 +1,4 @@
-const todoArray = JSON.parse(localStorage.getItem("storedTodo"));
+const todoArray = JSON.parse(localStorage.getItem("storedTodo")) || [];
 displayTodo();
 
 //this part prevents the default form submission and page refreshing.
@@ -48,7 +48,7 @@ function displayTodo() {
                 <i class="fa-solid fa-trash"></i>
             </button>
             </li>`;
-        } else if (todoArray[i].completed === true) {
+        } else {
             HTML += `<li class="tasks">
             <input type="checkbox" id="check-done-${i}" class="new-class" checked/>
     
