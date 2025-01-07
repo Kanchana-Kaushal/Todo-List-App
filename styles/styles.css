@@ -164,7 +164,12 @@ hr {
 
 @media (max-width: 500px) {
     html {
-        font-size: 12pt;
+        font-size: 1em;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
     }
 
     #add-btn {
