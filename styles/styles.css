@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: var(--primary-color);
-    padding: 1em;
+    padding: 0.5em;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -165,11 +165,6 @@ hr {
 @media (max-width: 500px) {
     html {
         font-size: 1em;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
     }
 
     #add-btn {
