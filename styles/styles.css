@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: var(--primary-color);
-    padding: 2em;
+    padding: 1em;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
