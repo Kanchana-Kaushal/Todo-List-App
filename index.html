@@ -16,7 +16,6 @@
             crossorigin="anonymous"
         ></script>
     </head>
-    <script src="scripts/script.js"></script>
     <body>
         <h1>To-Do List</h1>
         <div id="container">
@@ -27,71 +26,14 @@
                     placeholder="What are you planning to do?"
                     autocomplete="off"
                 />
-                <button id="add-btn">Add To-Do</button>
+                <button id="add-btn" onclick="inputTodo();" type="button">
+                    Add To-Do
+                </button>
             </form>
             <hr />
-            <ul>
-                <li class="tasks">
-                    <input type="checkbox" id="check-done" />
-
-                    <label for="check-done" class="custom-checkbox">
-                        <i class="fa-solid fa-check"></i>
-                    </label>
-
-                    <label for="check-done" class="task-description"
-                        >Sample To-Do Description
-                    </label>
-
-                    <button class="del-btn">
-                        <i class="fa-solid fa-trash"></i>
-                    </button>
-                </li>
-                <li class="tasks">
-                    <input type="checkbox" id="check-done-2" />
-
-                    <label for="check-done-2" class="custom-checkbox">
-                        <i class="fa-solid fa-check"></i>
-                    </label>
-
-                    <label for="check-done-2" class="task-description"
-                        >Sample To-Do Description
-                    </label>
-
-                    <button class="del-btn">
-                        <i class="fa-solid fa-trash"></i>
-                    </button>
-                </li>
-                <li class="tasks">
-                    <input type="checkbox" id="check-done-3" />
-
-                    <label for="check-done-3" class="custom-checkbox">
-                        <i class="fa-solid fa-check"></i>
-                    </label>
-
-                    <label for="check-done-3" class="task-description"
-                        >Sample To-Do Description
-                    </label>
-
-                    <button class="del-btn">
-                        <i class="fa-solid fa-trash"></i>
-                    </button>
-                </li>
-                <li class="tasks">
-                    <input type="checkbox" id="check-done-4" />
-
-                    <label for="check-done-4" class="custom-checkbox">
-                        <i class="fa-solid fa-check"></i>
-                    </label>
-
-                    <label for="check-done-4" class="task-description"
-                        >Sample To-Do Description
-                    </label>
-
-                    <button class="del-btn">
-                        <i class="fa-solid fa-trash"></i>
-                    </button>
-                </li>
-            </ul>
+            <ul class="todoList"></ul>
         </div>
+
+        <script src="scripts/script.js"></script>
     </body>
 </html>
